@@ -466,43 +466,56 @@ tabs = st.tabs([
 with tabs[0]:
     st.header("📖 Overview of ROACCUTANE (Isotretinoin)")
 
-    with st.expander("🎯 Indications & Available Strengths", expanded=True):
-        col1, col2 = st.columns(2)
-        with col1:
-            st.markdown("""
-            <div class="info-box">
-            <h4>👨‍⚕️ Primary Indication:</h4>
-            <ul>
-                <li><strong>Treatment of severe recalcitrant nodular acne in non-pregnant patients 12 years of age and older</strong></li>
-                <li><em>Nodules:</em> Inflammatory lesions with a diameter of ≥5 mm (may become suppurative or hemorrhagic)</li>
-                <li><em>"Severe":</em> Defined as "many" nodules as opposed to "few or several"</li>
-                <li><em>Prescribing Prerequisite:</em> Reserved ONLY for patients unresponsive to conventional therapy, including systemic antibiotics</li>
-            </ul>
-            <h4>📋 Limitations of Use:</h4>
-            <ul>
-                <li>A single course of therapy for <strong>15 to 20 weeks</strong> has been shown to result in complete and prolonged remission</li>
-                <li>If a second course is needed, it is <strong>not recommended</strong> before a <strong>two-month (8-week) waiting period</strong>, as acne may continue to improve off-therapy</li>
-            </ul>
-            </div>
-            """, unsafe_allow_html=True)
-        with col2:
-            st.markdown("""
-            <div class="card-item">
-                <h4>💊 Generic Isotretinoin Capsules</h4>
-                <p class="card-detail"><strong>Available Strengths:</strong> 10 mg, 20 mg, 30 mg, 40 mg</p>
-                <p class="card-detail"><span class="card-badge card-badge-yellow">Must take with high-fat meal</span></p>
-            </div>
-            <div class="card-item">
-                <h4>💊 Absorica® (Brand)</h4>
-                <p class="card-detail"><strong>Available Strengths:</strong> 10 mg, 20 mg, 25 mg, 30 mg, 35 mg, 40 mg</p>
-                <p class="card-detail"><span class="card-badge card-badge-green">May take with or without food</span></p>
-            </div>
-            <div class="card-item">
-                <h4>💊 Absorica LD® (Micronized)</h4>
-                <p class="card-detail"><strong>Available Strengths:</strong> 8 mg, 16 mg, 24 mg, 32 mg</p>
-                <p class="card-detail"><span class="card-badge card-badge-blue">NOT interchangeable with Absorica</span></p>
-            </div>
-            """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="info-box">
+    <h4>ℹ️ Basic Information</h4>
+    <p class="card-detail">🧪 <strong>Generic Name:</strong> Isotretinoin</p>
+    <p class="card-detail">🏷️ <strong>Brand Names:</strong> Accutane® (US, discontinued original), Roaccutane® (Global), Absorica®, Absorica LD®</p>
+    <p class="card-detail">� <strong>Original Manufacturer:</strong> F. Hoffmann-La Roche AG</p>
+    <p class="card-detail">💊 <strong>Drug Class:</strong> Retinoid (Vitamin A Derivative)</p>
+    <p class="card-detail">📅 <strong>FDA Approval:</strong> 1982</p>
+    <p class="card-detail">📋 <strong>REMS Program:</strong> iPLEDGE — Mandatory for all prescribers, patients, and pharmacies</p>
+    <p class="card-detail">📌 <strong>NDA Reference:</strong> 021951 / 211913</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("### 🎯 Indications & Available Strengths")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("""
+        <div class="info-box">
+        <h4>👨‍⚕️ Primary Indication:</h4>
+        <ul>
+            <li><strong>Treatment of severe recalcitrant nodular acne in non-pregnant patients 12 years of age and older</strong></li>
+            <li><em>Nodules:</em> Inflammatory lesions with a diameter of ≥5 mm (may become suppurative or hemorrhagic)</li>
+            <li><em>"Severe":</em> Defined as "many" nodules as opposed to "few or several"</li>
+            <li><em>Prescribing Prerequisite:</em> Reserved ONLY for patients unresponsive to conventional therapy, including systemic antibiotics</li>
+        </ul>
+        <h4>📋 Limitations of Use:</h4>
+        <ul>
+            <li>A single course of therapy for <strong>15 to 20 weeks</strong> has been shown to result in complete and prolonged remission</li>
+            <li>If a second course is needed, it is <strong>not recommended</strong> before a <strong>two-month (8-week) waiting period</strong>, as acne may continue to improve off-therapy</li>
+        </ul>
+        </div>
+        """, unsafe_allow_html=True)
+    with col2:
+        st.markdown("""
+        <div class="card-item">
+            <h4>💊 Generic Isotretinoin Capsules</h4>
+            <p class="card-detail"><strong>Available Strengths:</strong> 10 mg, 20 mg, 30 mg, 40 mg</p>
+            <p class="card-detail"><span class="card-badge card-badge-yellow">Must take with high-fat meal</span></p>
+        </div>
+        <div class="card-item">
+            <h4>💊 Absorica® (Brand)</h4>
+            <p class="card-detail"><strong>Available Strengths:</strong> 10 mg, 20 mg, 25 mg, 30 mg, 35 mg, 40 mg</p>
+            <p class="card-detail"><span class="card-badge card-badge-green">May take with or without food</span></p>
+        </div>
+        <div class="card-item">
+            <h4>💊 Absorica LD® (Micronized)</h4>
+            <p class="card-detail"><strong>Available Strengths:</strong> 8 mg, 16 mg, 24 mg, 32 mg</p>
+            <p class="card-detail"><span class="card-badge card-badge-blue">NOT interchangeable with Absorica</span></p>
+        </div>
+        """, unsafe_allow_html=True)
 
     with st.expander("🏆 Key Clinical Points"):
         st.markdown("""
@@ -523,30 +536,19 @@ with tabs[0]:
         </div>
         """, unsafe_allow_html=True)
 
-    with st.expander("ℹ️ Basic Information"):
-        st.markdown("""
-        <div class="info-box">
-        <p class="card-detail">🧪 <strong>Generic Name:</strong> Isotretinoin</p>
-        <p class="card-detail">🏷️ <strong>Brand Names:</strong> Accutane® (US, discontinued original), Roaccutane® (Global), Absorica®, Absorica LD®</p>
-        <p class="card-detail">🏭 <strong>Original Manufacturer:</strong> F. Hoffmann-La Roche AG</p>
-        <p class="card-detail">💊 <strong>Drug Class:</strong> Retinoid (Vitamin A Derivative)</p>
-        <p class="card-detail">📅 <strong>FDA Approval:</strong> 1982</p>
-        <p class="card-detail">📋 <strong>REMS Program:</strong> iPLEDGE — Mandatory for all prescribers, patients, and pharmacies</p>
-        <p class="card-detail">📌 <strong>NDA Reference:</strong> 021951 / 211913</p>
-        </div>
-        """, unsafe_allow_html=True)
+
 
 # ==================== TAB 2: MECHANISM ====================
 with tabs[1]:
     st.header("⚗️ Mechanism of Action")
 
-    with st.expander("🔬 Retinoid Overview", expanded=True):
-        st.markdown("""
-        <div class="info-box">
-        <h3 style="color: #1e3a8a;">🔬 Systemic Retinoid — Multi-Target Action</h3>
-        <p>Isotretinoin (13-cis-retinoic acid) is a naturally occurring derivative of Vitamin A. It is the <strong>only drug that addresses all four major pathogenic factors of acne</strong>: sebum production, follicular keratinization, bacterial colonization (<em>Cutibacterium acnes</em>), and inflammation. Its unique ability to cause irreversible shrinkage of sebaceous glands is the basis for its capacity to induce long-term remission.</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### 🔬 Retinoid Overview")
+    st.markdown("""
+    <div class="info-box">
+    <h3 style="color: #1e3a8a;">🔬 Systemic Retinoid — Multi-Target Action</h3>
+    <p>Isotretinoin (13-cis-retinoic acid) is a naturally occurring derivative of Vitamin A. It is the <strong>only drug that addresses all four major pathogenic factors of acne</strong>: sebum production, follicular keratinization, bacterial colonization (<em>Cutibacterium acnes</em>), and inflammation. Its unique ability to cause irreversible shrinkage of sebaceous glands is the basis for its capacity to induce long-term remission.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("⚙️ Detailed Mechanism"):
         col1, col2 = st.columns(2)
@@ -620,38 +622,38 @@ with tabs[1]:
 # ==================== TAB 3: DOSAGE ====================
 with tabs[2]:
     st.header("💊 Dosage and Administration")
-    with st.expander("👨‍⚕️ Important Notes & Standard Dosing", expanded=True):
-        st.markdown("""
-        <div class="critical-box">
-        <h3 style="color: #dc2626; text-align: center;">🚨 iPLEDGE REMS PROGRAM — MANDATORY 🚨</h3>
-        <p style="font-size: 1.1rem; font-weight: bold; text-align: center;">
-        Isotretinoin is ONLY available through the iPLEDGE REMS program. All prescribers, patients, and dispensing pharmacies MUST be registered and comply with all requirements before dispensing.
-        </p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### 👨‍⚕️ Important Notes & Standard Dosing")
+    st.markdown("""
+    <div class="critical-box">
+    <h3 style="color: #dc2626; text-align: center;">🚨 iPLEDGE REMS PROGRAM — MANDATORY 🚨</h3>
+    <p style="font-size: 1.1rem; font-weight: bold; text-align: center;">
+    Isotretinoin is ONLY available through the iPLEDGE REMS program. All prescribers, patients, and dispensing pharmacies MUST be registered and comply with all requirements before dispensing.
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown("""
-        <div class="card-item">
-            <h4>1️⃣ Standard Dosing (Generic / Absorica)</h4>
-            <p class="card-detail"><strong>Dose:</strong> 0.5 to 1 mg/kg/day</p>
-            <p class="card-detail"><strong>Schedule:</strong> Given in two divided doses daily</p>
-            <p class="card-detail"><strong>Duration:</strong> 15 to 20 weeks</p>
-            <p class="card-detail"><strong>Food:</strong> Generic isotretinoin MUST be taken with a high-fat meal to ensure absorption. Absorica may be taken with or without food.</p>
-        </div>
-        <div class="card-item">
-            <h4>2️⃣ Micronized Dosing (Absorica LD)</h4>
-            <p class="card-detail"><strong>Dose:</strong> 0.4 to 0.8 mg/kg/day</p>
-            <p class="card-detail"><strong>Schedule:</strong> Given in two divided doses daily</p>
-            <p class="card-detail"><strong>Duration:</strong> 15 to 20 weeks</p>
-            <p class="card-detail"><span class="card-badge card-badge-red">NOT interchangeable with Absorica — different bioavailability</span></p>
-        </div>
-        <div class="card-item">
-            <h4>3️⃣ Very Severe Disease / Trunk Acne (Adults)</h4>
-            <p class="card-detail"><strong>Dose:</strong> Up to 2 mg/kg/day (or 1.6 mg/kg/day for Absorica LD)</p>
-            <p class="card-detail"><strong>Schedule:</strong> Given in divided doses, as tolerated</p>
-            <p class="card-detail"><strong>Note:</strong> For adult patients with severe scarring or disease primarily manifested on the trunk</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card-item">
+        <h4>1️⃣ Standard Dosing (Generic / Absorica)</h4>
+        <p class="card-detail"><strong>Dose:</strong> 0.5 to 1 mg/kg/day</p>
+        <p class="card-detail"><strong>Schedule:</strong> Given in two divided doses daily</p>
+        <p class="card-detail"><strong>Duration:</strong> 15 to 20 weeks</p>
+        <p class="card-detail"><strong>Food:</strong> Generic isotretinoin MUST be taken with a high-fat meal to ensure absorption. Absorica may be taken with or without food.</p>
+    </div>
+    <div class="card-item">
+        <h4>2️⃣ Micronized Dosing (Absorica LD)</h4>
+        <p class="card-detail"><strong>Dose:</strong> 0.4 to 0.8 mg/kg/day</p>
+        <p class="card-detail"><strong>Schedule:</strong> Given in two divided doses daily</p>
+        <p class="card-detail"><strong>Duration:</strong> 15 to 20 weeks</p>
+        <p class="card-detail"><span class="card-badge card-badge-red">NOT interchangeable with Absorica — different bioavailability</span></p>
+    </div>
+    <div class="card-item">
+        <h4>3️⃣ Very Severe Disease / Trunk Acne (Adults)</h4>
+        <p class="card-detail"><strong>Dose:</strong> Up to 2 mg/kg/day (or 1.6 mg/kg/day for Absorica LD)</p>
+        <p class="card-detail"><strong>Schedule:</strong> Given in divided doses, as tolerated</p>
+        <p class="card-detail"><strong>Note:</strong> For adult patients with severe scarring or disease primarily manifested on the trunk</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("📉 Dose Adjustments & Discontinuation"):
         col1, col2 = st.columns(2)
@@ -703,24 +705,24 @@ with tabs[2]:
 # ==================== TAB 4: PHARMACOKINETICS ====================
 with tabs[3]:
     st.header("⚖️ Pharmacokinetics")
-    with st.expander("📊 PK Parameters Summary", expanded=True):
-        st.markdown("""
-        <div class="card-item">
-            <h4>📊 Isotretinoin (Parent Drug)</h4>
-            <p class="card-detail"><strong>Bioavailability:</strong> ~25% (fasting); significantly increased with high-fat meal</p>
-            <p class="card-detail"><strong>Tmax:</strong> 3–5 hours</p>
-            <p class="card-detail"><strong>Half-life:</strong> ~21 hours (terminal elimination)</p>
-            <p class="card-detail"><strong>Protein Binding:</strong> 99.9%</p>
-            <p class="card-detail"><strong>Metabolism:</strong> Hepatic — oxidation via CYP2C8, CYP3A4, CYP2C9, CYP2B6; also glucuronidation</p>
-            <p class="card-detail"><strong>Active Metabolite:</strong> 4-oxo-isotretinoin (comparable plasma levels after steady state)</p>
-        </div>
-        <div class="card-item">
-            <h4>📊 4-oxo-Isotretinoin (Major Active Metabolite)</h4>
-            <p class="card-detail"><strong>Half-life:</strong> ~24 hours</p>
-            <p class="card-detail"><strong>Protein Binding:</strong> 99.9%</p>
-            <p class="card-detail"><strong>Clinical Note:</strong> Reaches plasma levels exceeding those of the parent drug at steady state; contributes to overall clinical activity</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### 📊 PK Parameters Summary")
+    st.markdown("""
+    <div class="card-item">
+        <h4>📊 Isotretinoin (Parent Drug)</h4>
+        <p class="card-detail"><strong>Bioavailability:</strong> ~25% (fasting); significantly increased with high-fat meal</p>
+        <p class="card-detail"><strong>Tmax:</strong> 3–5 hours</p>
+        <p class="card-detail"><strong>Half-life:</strong> ~21 hours (terminal elimination)</p>
+        <p class="card-detail"><strong>Protein Binding:</strong> 99.9%</p>
+        <p class="card-detail"><strong>Metabolism:</strong> Hepatic — oxidation via CYP2C8, CYP3A4, CYP2C9, CYP2B6; also glucuronidation</p>
+        <p class="card-detail"><strong>Active Metabolite:</strong> 4-oxo-isotretinoin (comparable plasma levels after steady state)</p>
+    </div>
+    <div class="card-item">
+        <h4>📊 4-oxo-Isotretinoin (Major Active Metabolite)</h4>
+        <p class="card-detail"><strong>Half-life:</strong> ~24 hours</p>
+        <p class="card-detail"><strong>Protein Binding:</strong> 99.9%</p>
+        <p class="card-detail"><strong>Clinical Note:</strong> Reaches plasma levels exceeding those of the parent drug at steady state; contributes to overall clinical activity</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("🧬 Distribution, Metabolism & Elimination"):
         col1, col2 = st.columns(2)
@@ -781,38 +783,38 @@ with tabs[3]:
 with tabs[4]:
     st.header("🚫 Contraindications and Warnings")
 
-    with st.expander("⚠️ Boxed Warning & Absolute Contraindications", expanded=True):
-        st.markdown("""
-        <div class="critical-box">
-        <h2 style="color: #dc2626; text-align: center;">🚨 BOXED WARNING — TERATOGENICITY 🚨</h2>
-        <p style="font-size: 1.1rem; text-align: center; font-weight: bold;">
-        Isotretinoin MUST NOT be used by female patients who are or may become pregnant. There is an extremely high risk that severe birth defects will result if pregnancy occurs while taking isotretinoin in any amount, even for short periods of time. Potentially any fetus exposed during pregnancy can be affected. iPLEDGE REMS program is MANDATORY.
-        </p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### ⚠️ Boxed Warning & Absolute Contraindications")
+    st.markdown("""
+    <div class="critical-box">
+    <h2 style="color: #dc2626; text-align: center;">🚨 BOXED WARNING — TERATOGENICITY 🚨</h2>
+    <p style="font-size: 1.1rem; text-align: center; font-weight: bold;">
+    Isotretinoin MUST NOT be used by female patients who are or may become pregnant. There is an extremely high risk that severe birth defects will result if pregnancy occurs while taking isotretinoin in any amount, even for short periods of time. Potentially any fetus exposed during pregnancy can be affected. iPLEDGE REMS program is MANDATORY.
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown("""
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚨 1. Pregnancy (Category X)</h4>
-            <p class="card-detail"><strong>Risk:</strong> Extremely high risk of severe birth defects — craniofacial, cardiac, CNS, and thymic malformations</p>
-            <p class="card-detail"><strong>Action:</strong> iPLEDGE REMS — two forms of contraception required; monthly pregnancy tests mandatory</p>
-        </div>
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚨 2. Hypersensitivity</h4>
-            <p class="card-detail"><strong>Risk:</strong> Anaphylactic reactions and other allergic reactions</p>
-            <p class="card-detail"><strong>Action:</strong> Do not use in patients with known hypersensitivity to isotretinoin or any component (contains parabens, soybean oil)</p>
-        </div>
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚨 3. Hypervitaminosis A</h4>
-            <p class="card-detail"><strong>Risk:</strong> Isotretinoin is a Vitamin A derivative; concurrent use of Vitamin A supplements causes additive toxicity</p>
-            <p class="card-detail"><strong>Action:</strong> Patients must NOT take Vitamin A supplements during therapy</p>
-        </div>
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚨 4. Concomitant Tetracycline Use</h4>
-            <p class="card-detail"><strong>Risk:</strong> Additive risk of pseudotumor cerebri (increased intracranial pressure) — may cause permanent vision loss</p>
-            <p class="card-detail"><strong>Action:</strong> Do NOT co-administer with tetracyclines (doxycycline, minocycline)</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚨 1. Pregnancy (Category X)</h4>
+        <p class="card-detail"><strong>Risk:</strong> Extremely high risk of severe birth defects — craniofacial, cardiac, CNS, and thymic malformations</p>
+        <p class="card-detail"><strong>Action:</strong> iPLEDGE REMS — two forms of contraception required; monthly pregnancy tests mandatory</p>
+    </div>
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚨 2. Hypersensitivity</h4>
+        <p class="card-detail"><strong>Risk:</strong> Anaphylactic reactions and other allergic reactions</p>
+        <p class="card-detail"><strong>Action:</strong> Do not use in patients with known hypersensitivity to isotretinoin or any component (contains parabens, soybean oil)</p>
+    </div>
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚨 3. Hypervitaminosis A</h4>
+        <p class="card-detail"><strong>Risk:</strong> Isotretinoin is a Vitamin A derivative; concurrent use of Vitamin A supplements causes additive toxicity</p>
+        <p class="card-detail"><strong>Action:</strong> Patients must NOT take Vitamin A supplements during therapy</p>
+    </div>
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚨 4. Concomitant Tetracycline Use</h4>
+        <p class="card-detail"><strong>Risk:</strong> Additive risk of pseudotumor cerebri (increased intracranial pressure) — may cause permanent vision loss</p>
+        <p class="card-detail"><strong>Action:</strong> Do NOT co-administer with tetracyclines (doxycycline, minocycline)</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("⚠️ Warnings and Precautions"):
         col1, col2 = st.columns(2)
@@ -865,55 +867,55 @@ with tabs[4]:
 with tabs[5]:
     st.header("⚠️ Side Effects")
 
-    with st.expander("🔴 Common Effects (>5% Incidence)", expanded=True):
-        col1, col2 = st.columns(2)
-        with col1:
-            st.markdown("""
-            <div class="card-item">
-                <h4>💋 Cheilitis (Chapped Lips)</h4>
-                <p class="card-detail"><span class="card-badge card-badge-red">Very Common</span></p>
-                <p class="card-detail">Most frequent side effect; occurs in nearly all patients. Use lip balm/emollients.</p>
-            </div>
-            <div class="card-item">
-                <h4>🧴 Dry Skin (Xerosis)</h4>
-                <p class="card-detail"><span class="card-badge card-badge-red">Very Common</span></p>
-                <p class="card-detail">Generalized skin dryness, peeling, and increased skin fragility.</p>
-            </div>
-            <div class="card-item">
-                <h4>👃 Dry Nose / Epistaxis</h4>
-                <p class="card-detail"><span class="card-badge card-badge-yellow">Common</span></p>
-                <p class="card-detail">Nasal dryness and nosebleeds. Saline nasal spray recommended.</p>
-            </div>
-            """, unsafe_allow_html=True)
-        with col2:
-            st.markdown("""
-            <div class="card-item">
-                <h4>👁️ Dry Eyes / Conjunctivitis</h4>
-                <p class="card-detail"><span class="card-badge card-badge-yellow">Common</span></p>
-                <p class="card-detail">May cause contact lens intolerance. Artificial tears recommended.</p>
-            </div>
-            <div class="card-item">
-                <h4>🧪 Hypertriglyceridemia</h4>
-                <p class="card-detail"><span class="card-badge card-badge-red">~25% of patients</span></p>
-                <p class="card-detail">Elevations >800 mg/dL reported. Monitor lipid panel regularly.</p>
-            </div>
-            <div class="card-item">
-                <h4>🧪 Elevated Liver Transaminases</h4>
-                <p class="card-detail"><span class="card-badge card-badge-yellow">~15% of patients</span></p>
-                <p class="card-detail">Monitor LFTs at baseline and regular intervals. Discontinue if significant.</p>
-            </div>
-            """, unsafe_allow_html=True)
-
+    st.markdown("### 🔴 Common Effects (>5% Incidence)")
+    col1, col2 = st.columns(2)
+    with col1:
         st.markdown("""
-        <div class="info-box">
-        <h4>📊 Additional Laboratory Changes:</h4>
-        <ul>
-            <li>📉 Decreased HDL (~15% of patients)</li>
-            <li>📈 Increased total cholesterol (~7% of patients)</li>
-            <li>🔬 Alterations in fasting blood sugar</li>
-        </ul>
+        <div class="card-item">
+            <h4>💋 Cheilitis (Chapped Lips)</h4>
+            <p class="card-detail"><span class="card-badge card-badge-red">Very Common</span></p>
+            <p class="card-detail">Most frequent side effect; occurs in nearly all patients. Use lip balm/emollients.</p>
+        </div>
+        <div class="card-item">
+            <h4>🧴 Dry Skin (Xerosis)</h4>
+            <p class="card-detail"><span class="card-badge card-badge-red">Very Common</span></p>
+            <p class="card-detail">Generalized skin dryness, peeling, and increased skin fragility.</p>
+        </div>
+        <div class="card-item">
+            <h4>👃 Dry Nose / Epistaxis</h4>
+            <p class="card-detail"><span class="card-badge card-badge-yellow">Common</span></p>
+            <p class="card-detail">Nasal dryness and nosebleeds. Saline nasal spray recommended.</p>
         </div>
         """, unsafe_allow_html=True)
+    with col2:
+        st.markdown("""
+        <div class="card-item">
+            <h4>👁️ Dry Eyes / Conjunctivitis</h4>
+            <p class="card-detail"><span class="card-badge card-badge-yellow">Common</span></p>
+            <p class="card-detail">May cause contact lens intolerance. Artificial tears recommended.</p>
+        </div>
+        <div class="card-item">
+            <h4>🧪 Hypertriglyceridemia</h4>
+            <p class="card-detail"><span class="card-badge card-badge-red">~25% of patients</span></p>
+            <p class="card-detail">Elevations >800 mg/dL reported. Monitor lipid panel regularly.</p>
+        </div>
+        <div class="card-item">
+            <h4>🧪 Elevated Liver Transaminases</h4>
+            <p class="card-detail"><span class="card-badge card-badge-yellow">~15% of patients</span></p>
+            <p class="card-detail">Monitor LFTs at baseline and regular intervals. Discontinue if significant.</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="info-box">
+    <h4>📊 Additional Laboratory Changes:</h4>
+    <ul>
+        <li>📉 Decreased HDL (~15% of patients)</li>
+        <li>📈 Increased total cholesterol (~7% of patients)</li>
+        <li>🔬 Alterations in fasting blood sugar</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("🚨 Serious Reactions"):
         col1, col2 = st.columns(2)
@@ -990,33 +992,33 @@ with tabs[5]:
 with tabs[6]:
     st.header("💊⚖️ Drug Interactions")
 
-    with st.expander("🔴 Contraindicated & Avoid", expanded=True):
-        st.markdown("""
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚫 Tetracyclines (Doxycycline, Minocycline)</h4>
-            <p class="card-detail"><span class="card-badge card-badge-red">CONTRAINDICATED</span></p>
-            <p class="card-detail"><strong>Mechanism:</strong> Additive pharmacological risk of increased intracranial pressure</p>
-            <p class="card-detail"><strong>Clinical Effect:</strong> Pseudotumor cerebri (benign intracranial hypertension) — can cause permanent vision loss</p>
-        </div>
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚫 Vitamin A Supplements</h4>
-            <p class="card-detail"><span class="card-badge card-badge-red">CONTRAINDICATED</span></p>
-            <p class="card-detail"><strong>Mechanism:</strong> Additive toxicity (isotretinoin is a Vitamin A derivative)</p>
-            <p class="card-detail"><strong>Clinical Effect:</strong> Hypervitaminosis A — compounding hepatotoxic and teratogenic risks</p>
-        </div>
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚫 Micro-dosed Progesterone ("Minipills")</h4>
-            <p class="card-detail"><span class="card-badge card-badge-red">AVOID</span></p>
-            <p class="card-detail"><strong>Mechanism:</strong> Isotretinoin alters the pharmacokinetics of micro-dosed progestins</p>
-            <p class="card-detail"><strong>Clinical Effect:</strong> Inadequate contraception — unintended pregnancy carries extreme risk of life-threatening fetal abnormalities</p>
-        </div>
-        <div class="card-item" style="border-left: 4px solid #dc2626;">
-            <h4>🚫 St. John's Wort</h4>
-            <p class="card-detail"><span class="card-badge card-badge-yellow">AVOID</span></p>
-            <p class="card-detail"><strong>Mechanism:</strong> CYP3A4 induction increases clearance of oral contraceptives</p>
-            <p class="card-detail"><strong>Clinical Effect:</strong> Breakthrough bleeding and contraceptive failure — jeopardizes the two-method contraception requirement</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### 🔴 Contraindicated & Avoid")
+    st.markdown("""
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚫 Tetracyclines (Doxycycline, Minocycline)</h4>
+        <p class="card-detail"><span class="card-badge card-badge-red">CONTRAINDICATED</span></p>
+        <p class="card-detail"><strong>Mechanism:</strong> Additive pharmacological risk of increased intracranial pressure</p>
+        <p class="card-detail"><strong>Clinical Effect:</strong> Pseudotumor cerebri (benign intracranial hypertension) — can cause permanent vision loss</p>
+    </div>
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚫 Vitamin A Supplements</h4>
+        <p class="card-detail"><span class="card-badge card-badge-red">CONTRAINDICATED</span></p>
+        <p class="card-detail"><strong>Mechanism:</strong> Additive toxicity (isotretinoin is a Vitamin A derivative)</p>
+        <p class="card-detail"><strong>Clinical Effect:</strong> Hypervitaminosis A — compounding hepatotoxic and teratogenic risks</p>
+    </div>
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚫 Micro-dosed Progesterone ("Minipills")</h4>
+        <p class="card-detail"><span class="card-badge card-badge-red">AVOID</span></p>
+        <p class="card-detail"><strong>Mechanism:</strong> Isotretinoin alters the pharmacokinetics of micro-dosed progestins</p>
+        <p class="card-detail"><strong>Clinical Effect:</strong> Inadequate contraception — unintended pregnancy carries extreme risk of life-threatening fetal abnormalities</p>
+    </div>
+    <div class="card-item" style="border-left: 4px solid #dc2626;">
+        <h4>🚫 St. John's Wort</h4>
+        <p class="card-detail"><span class="card-badge card-badge-yellow">AVOID</span></p>
+        <p class="card-detail"><strong>Mechanism:</strong> CYP3A4 induction increases clearance of oral contraceptives</p>
+        <p class="card-detail"><strong>Clinical Effect:</strong> Breakthrough bleeding and contraceptive failure — jeopardizes the two-method contraception requirement</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("🟡 Monitor Closely"):
         st.markdown("""
@@ -1059,45 +1061,45 @@ with tabs[6]:
 with tabs[7]:
     st.header("📊 Drug Comparison — Systemic Acne Agents")
 
-    with st.expander("🔬 Isotretinoin vs Alternatives", expanded=True):
-        st.markdown("#### Isotretinoin (ROACCUTANE)")
-        st.markdown("""
-        <div class="card-item" style="border-left: 4px solid #0460A9;">
-            <h4>💊 Isotretinoin (ROACCUTANE / Accutane)</h4>
-            <p class="card-detail"><strong>Mechanism:</strong> Shrinks sebaceous glands, normalizes keratinization, anti-inflammatory, indirect antibacterial</p>
-            <p class="card-detail"><strong>Primary Indication:</strong> Severe recalcitrant nodular acne</p>
-            <p class="card-detail"><strong>Key Interactions:</strong> Tetracyclines, Vitamin A, Minipills, St. John's Wort</p>
-            <p class="card-detail"><strong>Pregnancy Risk:</strong> <span class="card-badge card-badge-red">Category X — iPLEDGE REMS required</span></p>
-            <p class="card-detail"><strong>Monitoring:</strong> LFTs, Lipid panel, Pregnancy tests (monthly)</p>
-            <p class="card-detail"><strong>Clinical Advantage:</strong> <span class="card-badge card-badge-green">ONLY agent capable of inducing permanent acne remission</span></p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("### 🔬 Isotretinoin vs Alternatives")
+    st.markdown("#### Isotretinoin (ROACCUTANE)")
+    st.markdown("""
+    <div class="card-item" style="border-left: 4px solid #0460A9;">
+        <h4>💊 Isotretinoin (ROACCUTANE / Accutane)</h4>
+        <p class="card-detail"><strong>Mechanism:</strong> Shrinks sebaceous glands, normalizes keratinization, anti-inflammatory, indirect antibacterial</p>
+        <p class="card-detail"><strong>Primary Indication:</strong> Severe recalcitrant nodular acne</p>
+        <p class="card-detail"><strong>Key Interactions:</strong> Tetracyclines, Vitamin A, Minipills, St. John's Wort</p>
+        <p class="card-detail"><strong>Pregnancy Risk:</strong> <span class="card-badge card-badge-red">Category X — iPLEDGE REMS required</span></p>
+        <p class="card-detail"><strong>Monitoring:</strong> LFTs, Lipid panel, Pregnancy tests (monthly)</p>
+        <p class="card-detail"><strong>Clinical Advantage:</strong> <span class="card-badge card-badge-green">ONLY agent capable of inducing permanent acne remission</span></p>
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown("#### Doxycycline (Oral Antibiotic)")
-        st.markdown("""
-        <div class="card-item" style="border-left: 4px solid #eab308;">
-            <h4>💊 Doxycycline</h4>
-            <p class="card-detail"><strong>Mechanism:</strong> Inhibits bacterial protein synthesis & anti-inflammatory</p>
-            <p class="card-detail"><strong>Primary Indication:</strong> Moderate to severe inflammatory acne</p>
-            <p class="card-detail"><strong>Key Interactions:</strong> Isotretinoin, Antacids, Iron, Warfarin</p>
-            <p class="card-detail"><strong>Pregnancy Risk:</strong> <span class="card-badge card-badge-red">Category D — Tooth discoloration</span></p>
-            <p class="card-detail"><strong>Monitoring:</strong> Minimal (clinical response)</p>
-            <p class="card-detail"><strong>Clinical Advantage:</strong> <span class="card-badge card-badge-blue">Rapid onset for inflammatory lesions</span></p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("#### Doxycycline (Oral Antibiotic)")
+    st.markdown("""
+    <div class="card-item" style="border-left: 4px solid #eab308;">
+        <h4>💊 Doxycycline</h4>
+        <p class="card-detail"><strong>Mechanism:</strong> Inhibits bacterial protein synthesis & anti-inflammatory</p>
+        <p class="card-detail"><strong>Primary Indication:</strong> Moderate to severe inflammatory acne</p>
+        <p class="card-detail"><strong>Key Interactions:</strong> Isotretinoin, Antacids, Iron, Warfarin</p>
+        <p class="card-detail"><strong>Pregnancy Risk:</strong> <span class="card-badge card-badge-red">Category D — Tooth discoloration</span></p>
+        <p class="card-detail"><strong>Monitoring:</strong> Minimal (clinical response)</p>
+        <p class="card-detail"><strong>Clinical Advantage:</strong> <span class="card-badge card-badge-blue">Rapid onset for inflammatory lesions</span></p>
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown("#### Spironolactone (Off-label)")
-        st.markdown("""
-        <div class="card-item" style="border-left: 4px solid #7c3aed;">
-            <h4>💊 Spironolactone</h4>
-            <p class="card-detail"><strong>Mechanism:</strong> Aldosterone/Androgen receptor antagonist</p>
-            <p class="card-detail"><strong>Primary Indication:</strong> Hormonal acne in adult females (off-label)</p>
-            <p class="card-detail"><strong>Key Interactions:</strong> ACE inhibitors, ARBs, K+ supplements</p>
-            <p class="card-detail"><strong>Pregnancy Risk:</strong> <span class="card-badge card-badge-yellow">Category C — Feminization of male fetus</span></p>
-            <p class="card-detail"><strong>Monitoring:</strong> Renal function, Serum Potassium</p>
-            <p class="card-detail"><strong>Clinical Advantage:</strong> <span class="card-badge card-badge-green">Excellent long-term safety profile for females</span></p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("#### Spironolactone (Off-label)")
+    st.markdown("""
+    <div class="card-item" style="border-left: 4px solid #7c3aed;">
+        <h4>💊 Spironolactone</h4>
+        <p class="card-detail"><strong>Mechanism:</strong> Aldosterone/Androgen receptor antagonist</p>
+        <p class="card-detail"><strong>Primary Indication:</strong> Hormonal acne in adult females (off-label)</p>
+        <p class="card-detail"><strong>Key Interactions:</strong> ACE inhibitors, ARBs, K+ supplements</p>
+        <p class="card-detail"><strong>Pregnancy Risk:</strong> <span class="card-badge card-badge-yellow">Category C — Feminization of male fetus</span></p>
+        <p class="card-detail"><strong>Monitoring:</strong> Renal function, Serum Potassium</p>
+        <p class="card-detail"><strong>Clinical Advantage:</strong> <span class="card-badge card-badge-green">Excellent long-term safety profile for females</span></p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("🏆 When to Choose & Key Differentiators"):
         st.markdown("""
@@ -1184,26 +1186,26 @@ with tabs[8]:
 with tabs[9]:
     st.header("🏢 F. Hoffmann-La Roche AG — Manufacturer Profile")
 
-    with st.expander("🏛️ Corporate Overview", expanded=True):
-        st.markdown("""
-        <div class="info-box">
+    st.markdown("### 🏛️ Corporate Overview")
+    st.markdown("""
+    <div class="info-box">
     <p class="card-detail">🏢 <strong>Company Name:</strong> F. Hoffmann-La Roche AG</p>
     <p class="card-detail">📅 <strong>Founded:</strong> October 1, 1896 (by Fritz Hoffmann-La Roche)</p>
     <p class="card-detail">📍 <strong>Headquarters:</strong> Basel, Switzerland 🇨🇭</p>
     <p class="card-detail">🌍 <strong>Global Ranking:</strong> 5th largest pharmaceutical company worldwide by revenue</p>
     <p class="card-detail">🎯 <strong>Leadership Position:</strong> Undisputed global leader in oncology (cancer therapeutics) and in vitro diagnostics</p>
     <p class="card-detail">🏗️ <strong>Divisions:</strong> Pharmaceuticals and Diagnostics — highly integrated and synergistic</p>
-        </div>
-        """, unsafe_allow_html=True)
+    </div>
+    """, unsafe_allow_html=True)
 
-        st.markdown("""
-        <div class="card-item" style="border-left: 4px solid #e74c3c;">
-            <h4>💊 History with Roaccutane (Isotretinoin)</h4>
-            <p class="card-detail"><strong>1960s:</strong> Isotretinoin was first synthesized and developed within Roche laboratories. The initial clinical goal was to investigate its potential as a treatment for skin cancer.</p>
-            <p class="card-detail"><strong>1970s:</strong> Collaborative studies with the National Cancer Institute revealed that while it was ineffective for cancer, it possessed unprecedented efficacy in treating severe, treatment-resistant nodular acne.</p>
-            <p class="card-detail"><strong>1982:</strong> Roche secured FDA approval to launch the drug under the brand name <strong>Accutane</strong> (US) and <strong>Roaccutane</strong> (globally). It revolutionized dermatology as the only medication capable of inducing long-term or permanent remission of severe acne.</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card-item" style="border-left: 4px solid #e74c3c;">
+        <h4>💊 History with Roaccutane (Isotretinoin)</h4>
+        <p class="card-detail"><strong>1960s:</strong> Isotretinoin was first synthesized and developed within Roche laboratories. The initial clinical goal was to investigate its potential as a treatment for skin cancer.</p>
+        <p class="card-detail"><strong>1970s:</strong> Collaborative studies with the National Cancer Institute revealed that while it was ineffective for cancer, it possessed unprecedented efficacy in treating severe, treatment-resistant nodular acne.</p>
+        <p class="card-detail"><strong>1982:</strong> Roche secured FDA approval to launch the drug under the brand name <strong>Accutane</strong> (US) and <strong>Roaccutane</strong> (globally). It revolutionized dermatology as the only medication capable of inducing long-term or permanent remission of severe acne.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("🏆 Leadership & Quick Facts"):
         col1, col2 = st.columns(2)
