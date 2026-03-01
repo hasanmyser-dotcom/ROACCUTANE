@@ -480,42 +480,22 @@ with tabs[0]:
     """, unsafe_allow_html=True)
 
     st.markdown("### 🎯 Indications & Available Strengths")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("""
-        <div class="info-box">
-        <h4>👨‍⚕️ Primary Indication:</h4>
-        <ul>
-            <li><strong>Treatment of severe recalcitrant nodular acne in non-pregnant patients 12 years of age and older</strong></li>
-            <li><em>Nodules:</em> Inflammatory lesions with a diameter of ≥5 mm (may become suppurative or hemorrhagic)</li>
-            <li><em>"Severe":</em> Defined as "many" nodules as opposed to "few or several"</li>
-            <li><em>Prescribing Prerequisite:</em> Reserved ONLY for patients unresponsive to conventional therapy, including systemic antibiotics</li>
-        </ul>
-        <h4>📋 Limitations of Use:</h4>
-        <ul>
-            <li>A single course of therapy for <strong>15 to 20 weeks</strong> has been shown to result in complete and prolonged remission</li>
-            <li>If a second course is needed, it is <strong>not recommended</strong> before a <strong>two-month (8-week) waiting period</strong>, as acne may continue to improve off-therapy</li>
-        </ul>
-        </div>
-        """, unsafe_allow_html=True)
-    with col2:
-        st.markdown("""
-        <div class="card-item">
-            <h4>💊 Generic Isotretinoin Capsules</h4>
-            <p class="card-detail"><strong>Available Strengths:</strong> 10 mg, 20 mg, 30 mg, 40 mg</p>
-            <p class="card-detail"><span class="card-badge card-badge-yellow">Must take with high-fat meal</span></p>
-        </div>
-        <div class="card-item">
-            <h4>💊 Absorica® (Brand)</h4>
-            <p class="card-detail"><strong>Available Strengths:</strong> 10 mg, 20 mg, 25 mg, 30 mg, 35 mg, 40 mg</p>
-            <p class="card-detail"><span class="card-badge card-badge-green">May take with or without food</span></p>
-        </div>
-        <div class="card-item">
-            <h4>💊 Absorica LD® (Micronized)</h4>
-            <p class="card-detail"><strong>Available Strengths:</strong> 8 mg, 16 mg, 24 mg, 32 mg</p>
-            <p class="card-detail"><span class="card-badge card-badge-blue">NOT interchangeable with Absorica</span></p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="info-box">
+    <h4>👨‍⚕️ Primary Indication:</h4>
+    <ul>
+        <li><strong>Treatment of severe recalcitrant nodular acne in non-pregnant patients 12 years of age and older</strong></li>
+        <li><em>Nodules:</em> Inflammatory lesions with a diameter of ≥5 mm (may become suppurative or hemorrhagic)</li>
+        <li><em>"Severe":</em> Defined as "many" nodules as opposed to "few or several"</li>
+        <li><em>Prescribing Prerequisite:</em> Reserved ONLY for patients unresponsive to conventional therapy, including systemic antibiotics</li>
+    </ul>
+    <h4>📋 Limitations of Use:</h4>
+    <ul>
+        <li>A single course of therapy for <strong>15 to 20 weeks</strong> has been shown to result in complete and prolonged remission</li>
+        <li>If a second course is needed, it is <strong>not recommended</strong> before a <strong>two-month (8-week) waiting period</strong>, as acne may continue to improve off-therapy</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
     with st.expander("🏆 Key Clinical Points"):
         st.markdown("""
@@ -569,23 +549,6 @@ with tabs[1]:
             </ul>
             </div>
             """, unsafe_allow_html=True)
-            st.markdown("### 3️⃣ Anti-inflammatory Action")
-            st.markdown("""
-            <div class="success-box">
-            <h4>🎯 Immune Modulation</h4>
-            <h5>Mechanism:</h5>
-            <ul>
-                <li>Inhibits neutrophil chemotaxis and migration to the follicle</li>
-                <li>Suppresses pro-inflammatory mediators (lipoxygenase products)</li>
-            </ul>
-            <h5>Clinical Effect:</h5>
-            <ul>
-                <li>✅ Reduces redness, swelling, and pain of nodular lesions</li>
-                <li>✅ Facilitates healing and reduces post-inflammatory scarring</li>
-            </ul>
-            </div>
-            """, unsafe_allow_html=True)
-        with col2:
             st.markdown("### 2️⃣ Normalization of Keratinization")
             st.markdown("""
             <div class="success-box">
@@ -599,6 +562,23 @@ with tabs[1]:
             <ul>
                 <li>✅ Prevents follicular occlusion — the initial step in all acne lesion formation</li>
                 <li>✅ Eliminates existing comedones (blackheads/whiteheads)</li>
+            </ul>
+            </div>
+            """, unsafe_allow_html=True)
+        with col2:
+            st.markdown("### 3️⃣ Anti-inflammatory Action")
+            st.markdown("""
+            <div class="success-box">
+            <h4>🎯 Immune Modulation</h4>
+            <h5>Mechanism:</h5>
+            <ul>
+                <li>Inhibits neutrophil chemotaxis and migration to the follicle</li>
+                <li>Suppresses pro-inflammatory mediators (lipoxygenase products)</li>
+            </ul>
+            <h5>Clinical Effect:</h5>
+            <ul>
+                <li>✅ Reduces redness, swelling, and pain of nodular lesions</li>
+                <li>✅ Facilitates healing and reduces post-inflammatory scarring</li>
             </ul>
             </div>
             """, unsafe_allow_html=True)
