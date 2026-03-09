@@ -609,16 +609,6 @@ with tabs[1]:
 # ==================== TAB 3: DOSAGE ====================
 with tabs[2]:
     st.header("💊 Dosage and Administration")
-    st.markdown("### 👨‍⚕️ Important Notes & Standard Dosing")
-    st.markdown("""
-    <div class="critical-box">
-    <h3 style="color: #dc2626; text-align: center;">🚨 iPLEDGE REMS PROGRAM — MANDATORY 🚨</h3>
-    <p style="font-size: 1.1rem; font-weight: bold; text-align: center;">
-    Isotretinoin is ONLY available through the iPLEDGE REMS program. All prescribers, patients, and dispensing pharmacies MUST be registered and comply with all requirements before dispensing.
-    </p>
-    </div>
-    """, unsafe_allow_html=True)
-
     st.markdown("""
     <div class="card-item">
         <h4>1️⃣ Standard Dosing (Generic / Absorica)</h4>
