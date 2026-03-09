@@ -119,6 +119,13 @@ st.markdown("""
         background-color: #0066B1;
         color: white;
     }
+    /* إخفاء الخط السفلي للتبويبة النشطة */
+    .stTabs [data-baseweb="tab-highlight"] {
+        display: none !important;
+    }
+    .stTabs [data-baseweb="tab-border"] {
+        display: none !important;
+    }
     
     /* تحسين العرض على الموبايل */
     @media (max-width: 768px) {
@@ -1118,34 +1125,81 @@ with tabs[7]:
 with tabs[8]:
     st.header("📚 References and Sources")
 
+    st.markdown("### 🏛️ Primary Regulatory & Safety Sources")
     st.markdown("""
     <div class="reference-item">
-        <strong>1. FDA Prescribing Information — Isotretinoin (NDA 021951 / 211913)</strong>
-        <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021951s000lbl.pdf" target="_blank">https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021951s000lbl.pdf</a>
+        <strong>1. Official FDA Prescribing Information (Label)</strong>
+        <p class="card-detail">The primary reference for dosing, contraindications, and drug interactions.</p>
+        <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021951s015lbl.pdf" target="_blank">https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021951s015lbl.pdf</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown("""
     <div class="reference-item">
-        <strong>2. EMA — Roaccutane/Isotretinoin Summary of Product Characteristics</strong>
-        <a href="https://www.ema.europa.eu/en/medicines" target="_blank">https://www.ema.europa.eu/en/medicines</a>
+        <strong>2. National Institutes of Health (NIH) - DailyMed</strong>
+        <p class="card-detail">Comprehensive and up-to-date structured product labeling for Isotretinoin.</p>
+        <a href="https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ISOTRETINOIN" target="_blank">https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ISOTRETINOIN</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown("""
     <div class="reference-item">
-        <strong>3. iPLEDGE REMS Program Official Website</strong>
-        <a href="https://www.ipledgeprogram.com" target="_blank">https://www.ipledgeprogram.com</a>
+        <strong>3. The iPLEDGE® REMS Program</strong>
+        <p class="card-detail">Mandatory FDA Risk Evaluation and Mitigation Strategy program documenting the Category X pregnancy risk and contraceptive interactions.</p>
+        <a href="https://www.ipledgeprogram.com/" target="_blank">https://www.ipledgeprogram.com/</a>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("### 📋 Clinical Guidelines & Professional Monographs")
+    st.markdown("""
+    <div class="reference-item">
+        <strong>4. American Academy of Dermatology (AAD) Guidelines</strong>
+        <p class="card-detail">Official clinical practice guidelines for the management of acne vulgaris, specifying Isotretinoin use.</p>
+        <a href="https://www.aad.org/member/clinical-quality/guidelines/acne" target="_blank">https://www.aad.org/member/clinical-quality/guidelines/acne</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown("""
     <div class="reference-item">
-        <strong>4. DailyMed — Isotretinoin Drug Label</strong>
-        <a href="https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=isotretinoin" target="_blank">https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=isotretinoin</a>
+        <strong>5. Drugs.com Professional Monograph</strong>
+        <p class="card-detail">Detailed pharmacokinetic and drug interaction data backed by IBM Watson Micromedex.</p>
+        <a href="https://www.drugs.com/pro/isotretinoin.html" target="_blank">https://www.drugs.com/pro/isotretinoin.html</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown("""
     <div class="reference-item">
-        <strong>5. Drugs.com — Isotretinoin Drug Interactions</strong>
-        <a href="https://www.drugs.com/drug-interactions/isotretinoin.html" target="_blank">https://www.drugs.com/drug-interactions/isotretinoin.html</a>
+        <strong>6. UpToDate (Lexicomp Drug Information)</strong>
+        <p class="card-detail">Premium clinical decision support resource for systemic Isotretinoin information. (Note: Requires practitioner login for full text).</p>
+        <a href="https://www.uptodate.com/contents/isotretinoin-systemic-drug-information" target="_blank">https://www.uptodate.com/contents/isotretinoin-systemic-drug-information</a>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("### 🔬 Verified Clinical Studies (PubMed)")
+    st.markdown("""
+    <div class="reference-item">
+        <strong>7. Drug Interaction Verification: Tetracyclines (PMID: 15152994)</strong>
+        <p class="card-detail">Clinical study documenting the risk of Pseudotumor cerebri when combining Isotretinoin with Tetracyclines.</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/15152994/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/15152994/</a>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="reference-item">
+        <strong>8. Comprehensive Safety & Toxicity Review (PMID: 31600216)</strong>
+        <p class="card-detail">Peer-reviewed clinical synthesis of Isotretinoin's adverse effect profile (psychiatric, hepatic, and metabolic).</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31600216/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/31600216/</a>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("### 🏭 Manufacturer & Historical Context")
+    st.markdown("""
+    <div class="reference-item">
+        <strong>9. F. Hoffmann-La Roche AG - Corporate History</strong>
+        <p class="card-detail">The official timeline and historical medical milestones of the manufacturer that developed Roaccutane.</p>
+        <a href="https://www.roche.com/about/history" target="_blank">https://www.roche.com/about/history</a>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="reference-item">
+        <strong>10. Historical Medical Context: Roche Innovations</strong>
+        <p class="card-detail">NCBI archived article detailing Roche's history in drug discovery (e.g., Benzodiazepines) to support the manufacturer's profile.</p>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4657308/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4657308/</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown("---")
